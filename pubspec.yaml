@@ -1,0 +1,11 @@
+name: dart_aulas
+description: Exercícios do guia "Flutter do zero" — parte Dart (passos 1 a 13).
+publish_to: none
+
+environment:
+  # 3.13 é necessário para os primary constructors do passo 11.
+  sdk: ^3.13.0
+
+dev_dependencies:
+  lints: any
+  test: any

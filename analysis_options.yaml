@@ -1,0 +1,6 @@
+# Avisos de boas práticas recomendados pelo time do Dart.
+include: package:lints/recommended.yaml
+
+analyzer:
+  exclude:
+    - flutter/**   # cada app Flutter tem sua própria análise
