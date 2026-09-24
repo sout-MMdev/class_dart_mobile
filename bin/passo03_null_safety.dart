@@ -19,5 +19,18 @@
 // Digite à mão, faça antes de abrir a solução no guia.
 
 void main() {
-  // Seu código aqui.
+  String nome = 'Ana';
+  String? telefone;
+  String? email = buscarEmail();
+  var telefoneExbibido = telefone ?? 'telefone não informado';
+
+  print(nome);
+  if (email != null) {
+    print(email.toUpperCase());
+  }
+
+  print(telefoneExbibido);
+  print(email?.length);
 }
+
+String? buscarEmail() => 'ana@email.com';
