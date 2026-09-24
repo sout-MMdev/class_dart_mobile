@@ -18,5 +18,8 @@
 // Digite à mão, faça antes de abrir a solução no guia.
 
 void main() {
-  // Seu código aqui.
+  // Esse programa mostra as informações de uma pessoa e o programa que ela quer criar
+  print('Maxuel');
+  print('Novo Hamburgo');
+  print('Conversor de moedas');
 }
