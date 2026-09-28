@@ -20,5 +20,30 @@
 // Digite à mão, faça antes de abrir a solução no guia.
 
 void main() {
-  // Seu código aqui.
+  // variaveis iniciais
+  double contaTotal = 187.50;
+  int pessoas = 4;
+
+  // Divisão simples sem gorjeta
+  double valorPorPessoa = contaTotal / pessoas;
+  print(valorPorPessoa.toStringAsFixed(2));
+
+  //txa e cálculo da gorjeta
+  const double taxaGorjeta = 0.10;
+  double valorGorjeta = contaTotal * taxaGorjeta;
+
+  // Total com gorjeta e novo valor por pessoa
+  double totalComGorjeta = contaTotal + valorGorjeta;
+  double valorComGorjetaPorPessoa = totalComGorjeta / pessoas;
+  print(valorComGorjetaPorPessoa.toStringAsFixed(2));
+
+  //Verifiquei se é par com o operador modulo
+  bool eParEsseNumeroDePessoa = pessoas % 2 == 0;
+  print(eParEsseNumeroDePessoa);
+
+  //Simula o textyto que eu digitei e refaz a divisão
+  String usuarioDigitou = '6';
+  int pessoasDigitadas = int.tryParse(usuarioDigitou) ?? 1;
+  double valorPor6Pessoas = totalComGorjeta / pessoasDigitadas;
+  print(valorPor6Pessoas.toStringAsFixed(2));
 }
